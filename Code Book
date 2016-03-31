@@ -1,12 +1,13 @@
 The data set required in step 4 of the project description consists of 10299 observations of 68 variables.
 The last two variables are subject (there were 30 people participating in the study) and activity. Each of 30 subjects was performing 6 
 types of activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
+
 The first 66 variables are calculated based on the accelerometer and gyroscope 3-axial signals (more detailed information regarding 
 the calculation can be found in the features_info.txt file UCI HAR Dataset directory). 
 The signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-(These are the original variables)
+(These are the original 33  measuremnts)
 
 tBodyAcc-XYZ            tBodyAccMag             fBodyAcc-XYZ          fBodyGyroMag
 tGravityAcc-XYZ         tGravityAccMag          fBodyAccJerk-XYZ      fBodyGyroJerkMag
@@ -14,8 +15,11 @@ tBodyAccJerk-XYZ        tBodyAccJerkMag         fBodyGyro-XYZ
 tBodyGyro-XYZ           tBodyGyroMag            fBodyAccMag
 tBodyGyroJerk-XYZ       tBodyGyroJerkMag        fBodyAccJerkMag
 
-This gives us 33 variables. Then this set was estimated with mean() and std() functions. That is 66 variables in all.
+Then this set of measurments was estimated with mean() and std() functions. That gives us our 66 variables.
 One of the task in the project was to change the above variables' names to descriptive and formatted ones. 
+To do so abbreviations, short words and capital letters were changed to full words and lower case letters, 
+all symbols were removed and the names of the estimation functions were placed at the head of variables' names.    
+
 The resulting set of variables is the following:
 
 meanoftimebodyaccelerationbyx                             
