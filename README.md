@@ -5,4 +5,4 @@ To run the file the working directory in R Studio should be set to the directory
 Then Opening and Sourcing run_analysis.R should do the trick.
 
 The data sets from UCI HRA Dataset directory will be loaded, all required data transformation/computation performed and the resulting tidy data set will be saved.
-For computational details look at run_analysis.R 
+Computational details can be found in  run_analysis.R 
